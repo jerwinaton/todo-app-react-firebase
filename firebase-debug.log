@@ -1,0 +1,119 @@
+[debug] [2022-03-05T07:28:37.743Z] ----------------------------------------------------------------------
+[debug] [2022-03-05T07:28:37.763Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\63912\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-03-05T07:28:37.764Z] CLI Version:   10.2.2
+[debug] [2022-03-05T07:28:37.764Z] Platform:      win32
+[debug] [2022-03-05T07:28:37.764Z] Node Version:  v16.13.1
+[debug] [2022-03-05T07:28:37.830Z] Time:          Sat Mar 05 2022 15:28:37 GMT+0800 (Singapore Standard Time)
+[debug] [2022-03-05T07:28:37.830Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-05T07:28:37.891Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-05T07:28:37.892Z] > authorizing via signed-in user (aton.j.bsinfotech@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\63912\Desktop\react-apps\todo-list
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-03-05T07:30:32.787Z] > refreshing access token with scopes: []
+[debug] [2022-03-05T07:30:32.787Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-05T07:30:33.157Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sat, 05 Mar 2022 07:30:32 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-05T07:30:33.286Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-03-05T07:30:33.958Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-03-05T07:30:33.958Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project jerwin-project (jerwin-project) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-03-05T07:31:42.429Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-03-05T07:31:42.643Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-03-05T07:31:42.644Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.8","browserURL":"https://www.gstatic.com/firebasejs/9.6.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.8/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.8/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.8/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.8/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.8/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.8/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.8/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.8/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.8/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.8/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\63912\Desktop\react-apps\todo-list 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=371155348&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-03-05T07:31:42.879Z] Error: spawn cmd ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:282:19)
+    at onErrorNT (node:internal/child_process:477:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-03-05T07:32:49.033Z] ----------------------------------------------------------------------
+[debug] [2022-03-05T07:32:49.036Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\63912\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-03-05T07:32:49.037Z] CLI Version:   10.2.2
+[debug] [2022-03-05T07:32:49.037Z] Platform:      win32
+[debug] [2022-03-05T07:32:49.037Z] Node Version:  v16.13.1
+[debug] [2022-03-05T07:32:49.038Z] Time:          Sat Mar 05 2022 15:32:49 GMT+0800 (Singapore Standard Time)
+[debug] [2022-03-05T07:32:49.039Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-05T07:32:49.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-05T07:32:49.054Z] > authorizing via signed-in user (aton.j.bsinfotech@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\63912\Desktop\react-apps\todo-list
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-03-05T07:34:55.575Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-03-05T07:34:56.277Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-03-05T07:34:56.277Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project jerwin-project (jerwin-project) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote build/404.html 
+[debug] [2022-03-05T07:35:03.420Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-03-05T07:35:03.615Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-03-05T07:35:03.615Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.8","browserURL":"https://www.gstatic.com/firebasejs/9.6.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.8/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.8/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.8/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.8/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.8/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.8/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.8/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.8/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.8/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.8/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\63912\Desktop\react-apps\todo-list 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=796320727&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-03-05T07:35:04.959Z] Error: spawn cmd ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:282:19)
+    at onErrorNT (node:internal/child_process:477:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
