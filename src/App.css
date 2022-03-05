@@ -54,3 +54,9 @@ body {
 .todo-list-item p {
   margin: 0;
 }
+/* edit todo liust */
+.edit-field {
+  width: 100%;
+  padding: 0px 10px;
+  border: 0;
+}
