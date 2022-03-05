@@ -1,29 +1,17 @@
-import useFetch from "../custom_hooks/useFetch";
-
-const TodoList = () => {
-  const {
-    data: todos,
-    isPending,
-    error,
-  } = useFetch("http://localhost:8000/todos");
-
+const TodoList = ({ todos }) => {
   return (
     <div className="todo-list">
-      {error && <div>{error}</div>}
-      {isPending && <div>Loading...</div>}
-      {todos && (
-        <div className="todo-list-container">
-          {todos.map((todo) => (
-            <div className="todo-list-item" key={todo.id}>
-              <p>{todo.todo}</p>
-              <div>
-                <button>e</button>
-                <button>d</button>
-              </div>
+      <ul className="todo-list-container">
+        {todos.map((todo) => (
+          <li className="todo-list-item" key={todo.id}>
+            <p>{todo}</p>
+            <div>
+              <button>e</button>
+              <button>d</button>
             </div>
-          ))}
-        </div>
-      )}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
