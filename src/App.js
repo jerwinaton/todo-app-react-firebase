@@ -17,6 +17,8 @@ function App() {
 
   // when the app loads, listen to db and fetch new records when todos state changes
   useEffect(() => {
+    // set focus to add todo input field
+    document.querySelector(".todo-form input").focus();
     // real time collection data
     const todosQuery = query(todosRef, orderBy("timestamp", "desc"), limit(10));
     onSnapshot(todosQuery, (snapshot) => {
@@ -29,11 +31,23 @@ function App() {
   // function to add todos
   const addTodo = (e) => {
     e.preventDefault();
+    // diabale input and add button
+    const inputField = document.querySelector(".todo-form input");
+    inputField.setAttribute("disabled", true);
+    const button = document.querySelector(".todo-form button");
+    button.setAttribute("disabled", true);
+    button.textContent = "Adding...";
     // adding documents
     addDoc(todosRef, {
       todo: input,
       timestamp: serverTimestamp(),
-    }).then(() => setInput(""));
+    }).then(() => {
+      setInput("");
+      inputField.removeAttribute("disabled");
+      button.textContent = "Add";
+      // set focus to add todo input field
+      document.querySelector(".todo-form input").focus();
+    });
   };
 
   // delete function
