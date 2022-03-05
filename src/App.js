@@ -3,10 +3,7 @@ import { todosRef } from "./firebase-config.js";
 import React, { useState, useEffect } from "react";
 import TodoList from "./components/TodoList";
 import {
-  getDocs,
   addDoc,
-  deleteDoc,
-  doc,
   onSnapshot,
   serverTimestamp,
   query,
@@ -23,9 +20,10 @@ function App() {
     // real time collection data
     const todosQuery = query(todosRef, orderBy("timestamp", "desc"), limit(10));
     onSnapshot(todosQuery, (snapshot) => {
-      setTodos(snapshot.docs.map((doc) => doc.data().todo));
+      setTodos(
+        snapshot.docs.map((doc) => ({ id: doc.id, todo: doc.data().todo }))
+      );
     });
-    console.log(todos);
   }, []);
 
   // function to add todos
@@ -37,6 +35,8 @@ function App() {
       timestamp: serverTimestamp(),
     }).then(() => setInput(""));
   };
+
+  // delete function
 
   return (
     <div className="App">
